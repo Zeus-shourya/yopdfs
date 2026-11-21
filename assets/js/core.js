@@ -42,7 +42,7 @@
   /* load a script once; resolves when ready */
   const loaded = {};
   YP.loadScript = function (src) {
-    const url = /^https?:|^\//.test(src) ? src : ROOT + src;
+    const url = /^(https?:|\/|\.)/.test(src) ? src : ROOT + src; // already-relative paths ("../x") are used as-is
     if (!loaded[url]) {
       loaded[url] = new Promise((resolve, reject) => {
         const s = document.createElement("script");
@@ -55,7 +55,7 @@
     return loaded[url];
   };
   YP.loadCSS = function (href) {
-    const url = /^https?:|^\//.test(href) ? href : ROOT + href;
+    const url = /^(https?:|\/|\.)/.test(href) ? href : ROOT + href;
     if (document.querySelector(`link[href="${url}"]`)) return;
     document.head.appendChild(YP.h("link", { rel: "stylesheet", href: url }));
   };
