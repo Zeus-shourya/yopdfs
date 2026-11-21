@@ -1,0 +1,81 @@
+<!--meta {"path":"pricing/","page":"pricing","priority":"0.6",
+"title":"Pricing — YoPdfs is Free. Pro Plans Coming Soon",
+"desc":"All 25 YoPdfs PDF and image tools are free with no watermark. Pro and Business plans for heavy users are coming soon — join the waitlist.",
+"scripts":["assets/js/pages.js"]} -->
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">Pricing</span>
+      <h1>Free for everyone.<br><span class="grad-text">Pro when you need more.</span></h1>
+      <p class="lead">Every tool is free today — no watermark, no daily limits. Pro and Business plans are on the way for power users and teams.</p>
+      <div class="seg" style="margin-top:22px" data-currency><button type="button" data-cur="inr" aria-pressed="true">₹ INR</button><button type="button" data-cur="usd" aria-pressed="false">$ USD</button></div>
+    </div>
+  </section>
+  <section class="container" style="padding-bottom:40px">
+    <div class="plans">
+      <div class="plan reveal">
+        <h3>Free</h3>
+        <div class="price" data-price="free">₹0<small> / forever</small></div>
+        <p style="margin:0">Everything you need for everyday documents.</p>
+        <ul>
+          <li>{{i_check}} All {{tool_count}} PDF &amp; image tools</li>
+          <li>{{i_check}} No watermark, no sign-up required</li>
+          <li>{{i_check}} Files up to 250 MB, 50 per batch</li>
+          <li>{{i_check}} 100% on-device processing</li>
+          <li>{{i_check}} Tool history with a free account</li>
+        </ul>
+        <a class="btn btn-block" href="{{root}}#tools">Start using tools</a>
+      </div>
+      <div class="plan hot reveal">
+        <span class="tag">Coming soon</span>
+        <h3>Pro</h3>
+        <div class="price" data-price="pro">₹199<small> / month</small></div>
+        <p style="margin:0">For job seekers, freelancers and power users.</p>
+        <ul>
+          <li>{{i_check}} Everything in Free</li>
+          <li>{{i_check}} No ads, ever</li>
+          <li>{{i_check}} Files up to 1 GB, 200 per batch</li>
+          <li>{{i_check}} Saved presets &amp; longer history</li>
+          <li>{{i_check}} Priority support</li>
+        </ul>
+        <button class="btn btn-primary btn-block" type="button" data-waitlist="pro">Join the Pro waitlist</button>
+      </div>
+      <div class="plan reveal">
+        <span class="tag" style="background:var(--navy)">Coming soon</span>
+        <h3>Business</h3>
+        <div class="price" data-price="business">₹799<small> / month</small></div>
+        <p style="margin:0">For teams that handle sensitive documents.</p>
+        <ul>
+          <li>{{i_check}} Everything in Pro</li>
+          <li>{{i_check}} 5 team seats, central billing</li>
+          <li>{{i_check}} Files up to 2 GB, 500 per batch</li>
+          <li>{{i_check}} Custom branding on watermarks</li>
+          <li>{{i_check}} Invoices with GST</li>
+        </ul>
+        <button class="btn btn-block" type="button" data-waitlist="business">Join the Business waitlist</button>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:20px">
+    <div class="narrow">
+      <div class="faq-list reveal">
+        <details><summary>Will the free tools stay free?</summary><p>Yes. The core tools are free and will stay free. Paid plans add convenience for heavy users — they don't lock basic features.</p></details>
+        <details><summary>When will Pro launch?</summary><p>We're building it now. Join the waitlist and we'll email you once — with an early-supporter discount.</p></details>
+        <details><summary>Why can YoPdfs be free?</summary><p>Because your files are processed on your own device, we don't pay for servers to store or convert them. That keeps costs tiny.</p></details>
+      </div>
+    </div>
+  </section>
+  <div class="modal" id="wl-modal" role="dialog" aria-modal="true" aria-labelledby="wl-title">
+    <div class="modal-bg" data-close></div>
+    <form class="modal-card" data-form="waitlist">
+      <button class="icon-btn modal-close" type="button" data-close aria-label="Close">{{i_x}}</button>
+      <span class="kicker">Waitlist</span>
+      <h3 id="wl-title" style="font-size:1.4rem">Get early access to <span data-wl-plan>Pro</span></h3>
+      <p>We'll email you once when it launches. No spam.</p>
+      <div class="field"><label for="wl-name">Name</label><input class="input" id="wl-name" name="name" autocomplete="name"></div>
+      <div class="field"><label for="wl-email">Email</label><input class="input" id="wl-email" name="email" type="email" required autocomplete="email"></div>
+      <input type="hidden" name="plan" value="pro">
+      <button class="btn btn-primary btn-block btn-lg" type="submit">Join waitlist</button>
+    </form>
+  </div>
+</main>

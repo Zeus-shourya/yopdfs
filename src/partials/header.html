@@ -1,0 +1,37 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="container nav">
+    <a class="brand" href="{{home}}" aria-label="YoPdfs home">{{logo}}<span>Yo<b>Pdfs</b></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <div class="nav-dd">
+        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">All tools {{i_down}}</button>
+        <div class="mega" role="menu">{{mega}}</div>
+      </div>
+      <a class="nav-link" href="{{root}}merge-pdf/">Merge PDF</a>
+      <a class="nav-link" href="{{root}}compress-pdf/">Compress</a>
+      <a class="nav-link" href="{{root}}pdf-to-word/">PDF to Word</a>
+      <a class="nav-link" href="{{root}}pricing/">Pricing</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search tools">{{i_search}}<kbd>/</kbd></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch dark or light mode"><span class="t-sun">{{i_sun}}</span><span class="t-moon">{{i_moon}}</span></button>
+      <div class="auth-slot" data-auth-slot>
+        <a class="btn btn-sm btn-ghost" href="{{root}}account/">Log in</a>
+        <a class="btn btn-sm btn-primary" href="{{root}}account/?mode=signup">Sign up</a>
+      </div>
+      <button class="icon-btn nav-burger" type="button" data-drawer-open aria-label="Open menu">{{i_menu}}</button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-bg" data-drawer-close></div>
+  <div class="drawer-panel" role="dialog" aria-label="Menu">
+    <div class="row" style="justify-content:space-between">
+      <a class="brand" href="{{home}}">{{logo}}<span>Yo<b>Pdfs</b></span></a>
+      <button class="icon-btn" type="button" data-drawer-close aria-label="Close menu">{{i_x}}</button>
+    </div>
+    {{drawer}}
+    <h4>Company</h4>
+    <a href="{{root}}pricing/">Pricing</a><a href="{{root}}about/">About</a><a href="{{root}}contact/">Contact</a><a href="{{root}}account/">My account</a>
+  </div>
+</div>

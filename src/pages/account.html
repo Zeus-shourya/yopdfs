@@ -1,0 +1,107 @@
+<!--meta {"path":"account/","page":"account","robots":"noindex,follow","sitemap":false,
+"title":"Log in or Sign up — YoPdfs","desc":"Create a free YoPdfs account to keep your tool history and preferences, or log in to your account.",
+"scripts":["assets/js/pages.js"]} -->
+<main id="main">
+  <section class="container" data-auth-view hidden>
+    <div class="auth-shell">
+      <div class="auth-art">
+        <div>
+          <span class="kicker" style="color:#FF7AB8">Free forever</span>
+          <h2>Your private PDF studio</h2>
+          <p>An account is optional — every tool works without one. Sign up to unlock a few extras:</p>
+          <ul>
+            <li>{{i_clock}} <span>History of the tools you've used</span></li>
+            <li>{{i_star}} <span>Early access to Pro features</span></li>
+            <li>{{i_shield}} <span>Your files still never leave your device</span></li>
+          </ul>
+        </div>
+        <p style="font-size:.85rem;margin:0">Trusted by students, job seekers and teams who care about privacy.</p>
+      </div>
+      <div class="auth-form">
+        <div class="seg auth-tabs" role="tablist">
+          <button type="button" role="tab" data-mode="login" aria-pressed="true">Log in</button>
+          <button type="button" role="tab" data-mode="signup" aria-pressed="false">Create account</button>
+        </div>
+        <div class="form-msg" hidden data-msg></div>
+
+        <form data-form="login" novalidate>
+          <h2 style="font-size:1.6rem">Welcome back 👋</h2>
+          <div class="field"><label for="li-email">Email</label><input class="input" id="li-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="li-pw">Password</label><div class="pw-wrap"><input class="input" id="li-pw" name="password" type="password" autocomplete="current-password" required><button type="button" data-showpw aria-label="Show password">{{i_eye}}</button></div></div>
+          <div class="row" style="justify-content:space-between;margin:-4px 0 14px"><span></span><button type="button" class="btn btn-sm btn-ghost" data-forgot>Forgot password?</button></div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Log in {{i_arrow}}</button>
+        </form>
+
+        <form data-form="signup" novalidate hidden>
+          <h2 style="font-size:1.6rem">Create your free account</h2>
+          <div class="field"><label for="su-name">Full name</label><input class="input" id="su-name" name="name" autocomplete="name" required minlength="2"></div>
+          <div class="field"><label for="su-email">Email</label><input class="input" id="su-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="su-pw">Password</label><div class="pw-wrap"><input class="input" id="su-pw" name="password" type="password" autocomplete="new-password" required minlength="8"><button type="button" data-showpw aria-label="Show password">{{i_eye}}</button></div><span class="hint" style="margin:0">At least 8 characters.</span></div>
+          <div class="opt-group"><span class="label">I'm a…</span>
+            <div class="role-pick">
+              <label><input type="radio" name="role" value="Student" checked>{{i_grad}}Student</label>
+              <label><input type="radio" name="role" value="Professional">{{i_briefcase}}Professional</label>
+              <label><input type="radio" name="role" value="Business">{{i_building}}Business</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="su-org">College / company <span class="muted">(optional)</span></label><input class="input" id="su-org" name="org" autocomplete="organization"></div>
+            <div class="field"><label for="su-phone">Phone <span class="muted">(optional)</span></label><input class="input" id="su-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <label class="check"><input type="checkbox" name="consent"> <span>Send me occasional product updates. Unsubscribe any time.</span></label>
+          <label class="check"><input type="checkbox" name="terms" required> <span>I agree to the <a href="{{root}}terms/" target="_blank">Terms</a> and <a href="{{root}}privacy/" target="_blank">Privacy Policy</a>.</span></label>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Create account {{i_arrow}}</button>
+        </form>
+
+        <form data-form="reset" novalidate hidden>
+          <h2 style="font-size:1.6rem">Reset your password</h2>
+          <p>Enter your account email. We'll issue a 6-digit reset code.</p>
+          <div class="field"><label for="rs-email">Email</label><input class="input" id="rs-email" name="email" type="email" autocomplete="email" required></div>
+          <div data-step2 hidden>
+            <div class="field"><label for="rs-code">Reset code</label><input class="input" id="rs-code" name="code" inputmode="numeric" maxlength="6" autocomplete="one-time-code"></div>
+            <div class="field"><label for="rs-pw">New password</label><input class="input" id="rs-pw" name="password" type="password" autocomplete="new-password" minlength="8"></div>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue {{i_arrow}}</button>
+          <button class="btn btn-ghost btn-block" type="button" data-mode="login" style="margin-top:8px">Back to log in</button>
+        </form>
+        <p class="muted" style="font-size:.78rem;margin-top:18px" data-backend-note></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" data-dash-view hidden>
+    <div class="page-hero" style="text-align:left;padding-bottom:10px">
+      <span class="kicker">My account</span>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem)">Hi, <span class="grad-text" data-uname></span> 👋</h1>
+      <p class="lead" style="margin:0" data-usub></p>
+    </div>
+    <div class="stat-grid" style="margin-bottom:22px">
+      <div class="stat"><b data-s-tasks>–</b><span>tasks completed</span></div>
+      <div class="stat"><b data-s-files>–</b><span>files processed</span></div>
+      <div class="stat"><b data-s-bytes>–</b><span>data processed</span></div>
+      <div class="stat"><b data-s-fav>–</b><span>favourite tool</span></div>
+    </div>
+    <div class="seo-grid" style="margin-top:0;grid-template-columns:1.5fr 1fr">
+      <div class="card" id="history">
+        <div class="row" style="justify-content:space-between;margin-bottom:12px"><h3 style="margin:0">Recent activity</h3><a class="btn btn-sm btn-soft" href="{{root}}#tools">Open a tool</a></div>
+        <div class="table-wrap"><table class="data"><thead><tr><th>When</th><th>Tool</th><th>Files</th><th>Size</th><th>Result</th></tr></thead><tbody data-hist><tr><td colspan="5" class="muted">Loading…</td></tr></tbody></table></div>
+        <p class="muted" style="font-size:.8rem;margin:10px 0 0">We record which tool you used, file count and sizes — never file names or contents.</p>
+      </div>
+      <div style="display:grid;gap:18px;align-content:start">
+        <div class="card">
+          <h3>Your plan</h3>
+          <p style="margin:0 0 12px"><b data-plan>Free</b> — all {{tool_count}} tools, no watermark.</p>
+          <a class="btn btn-soft btn-block" href="{{root}}pricing/">{{i_star}} See Pro plans</a>
+        </div>
+        <form class="card" data-form="profile">
+          <h3>Profile</h3>
+          <div class="field"><label for="pf-name">Name</label><input class="input" id="pf-name" name="name" required></div>
+          <div class="field"><label for="pf-role">I'm a</label><select class="input" id="pf-role" name="role"><option>Student</option><option>Professional</option><option>Business</option></select></div>
+          <div class="field"><label for="pf-org">College / company</label><input class="input" id="pf-org" name="org"></div>
+          <div class="field"><label for="pf-phone">Phone</label><input class="input" id="pf-phone" name="phone" type="tel"></div>
+          <div class="row"><button class="btn btn-primary" type="submit">Save changes</button><button class="btn btn-ghost" type="button" data-logout>{{i_logout}} Log out</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

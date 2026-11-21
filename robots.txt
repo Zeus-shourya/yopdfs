@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://zeus-shourya.github.io/yopdfs/sitemap.xml

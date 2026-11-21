@@ -1,0 +1,25 @@
+<!--meta {"path":"admin/","page":"admin","robots":"noindex,nofollow","sitemap":false,
+"title":"Admin — YoPdfs Data Export","desc":"YoPdfs admin data export.",
+"scripts":["assets/js/pages.js"]} -->
+<main id="main">
+  <section class="page-hero" style="text-align:left">
+    <div class="container">
+      <span class="kicker">Admin</span>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Collected data → <span class="grad-text">Excel</span></h1>
+      <p class="lead" style="margin:0">Users, logins, tool usage, contact messages, newsletter and waitlist — exported as one .xlsx workbook.</p>
+    </div>
+  </section>
+  <section class="container" style="padding-bottom:40px">
+    <form class="card" data-form="admin" style="max-width:640px">
+      <div class="form-msg" hidden data-msg></div>
+      <p class="muted" style="font-size:.88rem" data-backend-note></p>
+      <div class="field"><label for="ad-key">Admin key</label><input class="input" id="ad-key" name="key" type="password" autocomplete="off" placeholder="From the server console or your Apps Script settings"></div>
+      <div class="row"><button class="btn btn-primary" type="submit">{{i_eye}} Load data</button><button class="btn btn-soft" type="button" data-xlsx disabled>{{i_download}} Download Excel (.xlsx)</button></div>
+    </form>
+    <div data-admin-out hidden style="margin-top:22px">
+      <div class="stat-grid" data-admin-stats style="margin-bottom:18px"></div>
+      <div class="seg" data-admin-tabs style="margin-bottom:12px"></div>
+      <div class="table-wrap" style="max-height:60vh"><table class="data" data-admin-table></table></div>
+    </div>
+  </section>
+</main>

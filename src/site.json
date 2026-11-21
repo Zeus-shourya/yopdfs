@@ -1,0 +1,15 @@
+{
+  "name": "YoPdfs",
+  "url": "https://zeus-shourya.github.io/yopdfs",
+  "tagline": "Every PDF & image tool you need — free, fast and private.",
+  "email": "hello@yopdfs.com",
+  "twitter": "@yopdfs",
+  "categories": [
+    { "id": "all", "name": "All tools" },
+    { "id": "pdf", "name": "PDF" },
+    { "id": "image", "name": "Image" },
+    { "id": "convert", "name": "Convert" },
+    { "id": "edit", "name": "Edit" },
+    { "id": "compress", "name": "Compress" }
+  ]
+}

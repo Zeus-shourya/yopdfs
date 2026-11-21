@@ -1,0 +1,5 @@
+# private user data written by server.py — never publish
+data/
+__pycache__/
+*.tmp
+dev/test-helpers.js

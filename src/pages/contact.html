@@ -1,0 +1,33 @@
+<!--meta {"path":"contact/","page":"contact","priority":"0.5",
+"title":"Contact YoPdfs — Support, Feedback & Business Enquiries",
+"desc":"Get in touch with the YoPdfs team for support, feature requests, partnerships or business enquiries.",
+"scripts":["assets/js/pages.js"]} -->
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">Contact</span>
+      <h1>We'd love to <span class="grad-text">hear from you</span></h1>
+      <p class="lead">Questions, bug reports, feature ideas or partnership enquiries — send us a message and we'll reply within 1–2 working days.</p>
+    </div>
+  </section>
+  <section class="container" style="padding-bottom:40px">
+    <div class="seo-grid" style="margin-top:20px;grid-template-columns:1.3fr 1fr">
+      <form class="card" data-form="contact" novalidate>
+        <div class="form-msg" hidden data-msg></div>
+        <div class="row">
+          <div class="field"><label for="ct-name">Your name</label><input class="input" id="ct-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="ct-email">Email</label><input class="input" id="ct-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="field"><label for="ct-subject">Topic</label>
+          <select class="input" id="ct-subject" name="subject"><option>General question</option><option>Report a problem</option><option>Feature request</option><option>Business / partnership</option><option>Advertising</option><option>Privacy request</option></select></div>
+        <div class="field"><label for="ct-msg">Message</label><textarea class="input" id="ct-msg" name="message" required minlength="10" placeholder="Tell us what's on your mind. For problems, mention the tool and your browser — please don't attach confidential files."></textarea></div>
+        <button class="btn btn-primary btn-lg" type="submit">Send message {{i_arrow}}</button>
+      </form>
+      <div style="display:grid;gap:16px;align-content:start">
+        <div class="card"><span class="f-ico" style="display:inline-grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--bg-tint);color:var(--violet-neon);margin-bottom:10px">{{i_mail}}</span><h3>Email</h3><p style="margin:0"><a data-email href="mailto:hello@yopdfs.com">hello@yopdfs.com</a></p></div>
+        <div class="card"><span class="f-ico" style="display:inline-grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--bg-tint);color:var(--pink-neon);margin-bottom:10px">{{i_briefcase}}</span><h3>Business &amp; teams</h3><p style="margin:0">Need YoPdfs for your college, office or company? Choose “Business / partnership” and tell us about your team.</p></div>
+        <div class="card"><span class="f-ico" style="display:inline-grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--bg-tint);color:var(--success);margin-bottom:10px">{{i_shield}}</span><h3>Privacy</h3><p style="margin:0">We never receive your documents — so we can't see or recover them. See our <a href="{{root}}privacy/">Privacy Policy</a>.</p></div>
+      </div>
+    </div>
+  </section>
+</main>

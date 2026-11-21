@@ -1,0 +1,161 @@
+<!--meta {"path":"","page":"home","priority":"1.0",
+"title":"YoPdfs — Free PDF & Image Tools Online | Merge, Compress, Convert",
+"desc":"25 free PDF and image tools that run in your browser: merge, split, compress, edit, convert PDF to Word, Excel, JPG and more. No uploads, no watermark, no sign-up."} -->
+<main id="main">
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="grid"></span></div>
+    <div class="hero-float" aria-hidden="true" style="inset:0">
+      <div class="fcard cat-pdf" style="left:4%;top:120px;--r:-8deg"><span class="mini-ico">{{i_merge}}</span><b>Merge PDF</b><i></i><i></i></div>
+      <div class="fcard cat-image" style="right:5%;top:90px;--r:7deg;animation-delay:-2s"><span class="mini-ico">{{i_wand}}</span><b>Remove BG</b><div class="bar"></div></div>
+      <div class="fcard cat-compress" style="left:6%;bottom:0;--r:5deg;animation-delay:-4s"><span class="mini-ico">{{i_compress}}</span><b>−72% size</b><div class="bar"></div></div>
+      <div class="fcard cat-convert" style="right:6%;bottom:10px;--r:-6deg;animation-delay:-1s"><span class="mini-ico">{{i_word}}</span><b>PDF → Word</b><i></i><i></i></div>
+    </div>
+    <div class="container hero-inner">
+      <span class="eyebrow"><span class="pill">100% private</span> Your files never leave your device</span>
+      <h1>Every PDF &amp; image tool,<br><span class="grad-text">fast, free &amp; private.</span></h1>
+      <p class="lead">Merge, compress, convert, edit and sign PDFs. Resize, crop and remove backgrounds from images. {{tool_count}} pro-grade tools that work right in your browser — no uploads, no watermark, no sign-up.</p>
+      <div class="searchbox" data-hero-search>
+        {{i_search}}
+        <label class="sr-only" for="hero-q">Search tools</label>
+        <input class="input" id="hero-q" type="search" placeholder="What do you want to do? Try “compress”, “word”, “sign”…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="hero-results">
+        <span class="kbd-hint"><kbd>/</kbd> to search</span>
+        <div class="search-results" id="hero-results" role="listbox" hidden></div>
+      </div>
+      <div class="quick-chips">
+        <a class="chip" href="merge-pdf/">{{i_merge}} Merge PDF</a>
+        <a class="chip" href="compress-pdf/">{{i_compress}} Compress PDF</a>
+        <a class="chip" href="pdf-to-word/">{{i_word}} PDF to Word</a>
+        <a class="chip" href="jpg-to-pdf/">{{i_img2pdf}} JPG to PDF</a>
+        <a class="chip" href="edit-pdf/">{{i_signature}} Sign PDF</a>
+        <a class="chip" href="background-remover/">{{i_wand}} Remove background</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>{{tool_count}}</b><span>tools in one place</span></div>
+        <div><b>0</b><span>files uploaded to us</span></div>
+        <div><b>₹0 · $0</b><span>free, no watermark</span></div>
+        <div><b>15+</b><span>OCR languages</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tools" style="padding-top:20px">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">The toolkit</span>
+        <h2>All the tools you need, beautifully simple</h2>
+        <p>Pick a tool, drop your file, download the result. That's it.</p>
+      </div>
+      <div class="cat-tabs" role="tablist" aria-label="Tool categories">
+        <button class="cat-tab" role="tab" aria-selected="true" data-cat="all">All <span class="count">{{tool_count}}</span></button>
+        <button class="cat-tab" role="tab" aria-selected="false" data-cat="pdf">PDF <span class="count">{{count_pdf}}</span></button>
+        <button class="cat-tab" role="tab" aria-selected="false" data-cat="image">Image <span class="count">{{count_image}}</span></button>
+        <button class="cat-tab" role="tab" aria-selected="false" data-cat="convert">Convert <span class="count">{{count_convert}}</span></button>
+        <button class="cat-tab" role="tab" aria-selected="false" data-cat="edit">Edit <span class="count">{{count_edit}}</span></button>
+        <button class="cat-tab" role="tab" aria-selected="false" data-cat="compress">Compress <span class="count">{{count_compress}}</span></button>
+      </div>
+      <div class="tool-grid" id="tool-grid">{{tool_cards}}</div>
+    </div>
+  </section>
+
+  <div class="container"><div class="ad-slot" data-ad="home-mid"></div></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-band reveal">
+        <div>
+          <span class="kicker" style="color:#FF7AB8">Privacy by design</span>
+          <h2>Your documents stay yours. Always.</h2>
+          <p>Most online PDF sites upload your files to their servers. YoPdfs doesn't. Every tool runs inside your browser with open-source engines — so contracts, IDs, bank statements and résumés never touch the internet.</p>
+          <ul>
+            <li>{{i_shield}} <span><b>No uploads.</b> Processing happens on your phone or computer.</span></li>
+            <li>{{i_zap}} <span><b>No waiting in queues.</b> Speed depends on your device, not our servers.</span></li>
+            <li>{{i_eye}} <span><b>No tracking of file contents.</b> We only count anonymous tool usage to improve the product.</span></li>
+          </ul>
+        </div>
+        <div class="diagram" aria-hidden="true">
+          <svg viewBox="0 0 360 260" fill="none">
+            <defs><linearGradient id="dg" x1="0" x2="1"><stop stop-color="#8A3FFC"/><stop offset="1" stop-color="#FF2E97"/></linearGradient></defs>
+            <rect x="20" y="30" width="320" height="200" rx="18" stroke="rgba(255,255,255,.25)" stroke-dasharray="6 6"/>
+            <text x="34" y="54" fill="#D8D2F5" font-size="12" font-family="Inter">Your browser</text>
+            <rect x="46" y="86" width="74" height="96" rx="10" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.3)"/>
+            <path d="M62 108h42M62 122h42M62 136h30" stroke="#fff" stroke-opacity=".6" stroke-width="4" stroke-linecap="round"/>
+            <text x="58" y="200" fill="#D8D2F5" font-size="11" font-family="Inter">your file</text>
+            <path d="M132 134h50" stroke="url(#dg)" stroke-width="4" stroke-linecap="round"><animate attributeName="stroke-dasharray" values="0 60;60 0" dur="1.6s" repeatCount="indefinite"/></path>
+            <rect x="188" y="100" width="68" height="68" rx="18" fill="url(#dg)"/>
+            <path d="m210 134 8 8 16-16" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M262 134h30" stroke="url(#dg)" stroke-width="4" stroke-linecap="round"/>
+            <path d="M296 120v28M284 136l12 12 12-12" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="190" y="200" fill="#D8D2F5" font-size="11" font-family="Inter">processed locally</text>
+            <g opacity=".85"><circle cx="318" cy="18" r="12" fill="none" stroke="#FF7AB8" stroke-width="2"/><path d="m310 26 16-16" stroke="#FF7AB8" stroke-width="2"/></g>
+            <text x="200" y="22" fill="#FF9CCB" font-size="11" font-family="Inter">no server upload</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="container">
+      <div class="section-head reveal"><span class="kicker">Why YoPdfs</span><h2>Built to beat the big names</h2><p>Everything you expect from premium PDF software — without the paywall, the uploads or the clutter.</p></div>
+      <div class="features">
+        <div class="feature reveal" style="--c:var(--pink-neon)"><span class="f-ico">{{i_zap}}</span><h3>Lightning fast</h3><p>No upload, no download wait. Files are processed the moment you drop them.</p></div>
+        <div class="feature reveal" style="--c:var(--violet-neon)"><span class="f-ico">{{i_layers}}</span><h3>Batch everything</h3><p>Drop dozens of files at once — convert, compress or resize them together and grab a ZIP.</p></div>
+        <div class="feature reveal" style="--c:var(--peri-neon)"><span class="f-ico">{{i_sparkles}}</span><h3>AI built in</h3><p>Background removal and OCR run with AI models directly on your device.</p></div>
+        <div class="feature reveal" style="--c:var(--teal)"><span class="f-ico">{{i_gift}}</span><h3>Free, no watermark</h3><p>No sign-up walls, no stamped pages, no “3 files per day” limits.</p></div>
+        <div class="feature reveal" style="--c:var(--amber)"><span class="f-ico">{{i_globe}}</span><h3>Works everywhere</h3><p>Phone, tablet, laptop — Windows, Mac, Android or iPhone. Nothing to install.</p></div>
+        <div class="feature reveal" style="--c:var(--pink)"><span class="f-ico">{{i_lock}}</span><h3>Bank-grade security</h3><p>Protect PDFs with AES-256 encryption — the same standard used by Adobe Acrobat.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="kicker">Made for you</span><h2>For classrooms, careers &amp; companies</h2></div>
+      <div class="audience">
+        <div class="aud reveal" style="--c:var(--violet-neon)"><span class="f-ico">{{i_grad}}</span><h3>Students</h3><p>Submit assignments in the right format, merge notes, scan handwritten pages and pull text from slides.</p>
+          <ul><li><a href="jpg-to-pdf/">{{i_arrow}} Photos of notes → PDF</a></li><li><a href="merge-pdf/">{{i_arrow}} Merge assignment files</a></li><li><a href="ocr-image-to-text/">{{i_arrow}} Copy text from images</a></li></ul></div>
+        <div class="aud reveal" style="--c:var(--pink-neon)"><span class="f-ico">{{i_briefcase}}</span><h3>Job seekers &amp; professionals</h3><p>Polish your résumé, compress documents for job portals, make passport photos and sign offer letters.</p>
+          <ul><li><a href="compress-pdf/">{{i_arrow}} Shrink PDFs for upload limits</a></li><li><a href="passport-photo-maker/">{{i_arrow}} Passport &amp; ID photos</a></li><li><a href="edit-pdf/">{{i_arrow}} Sign documents</a></li></ul></div>
+        <div class="aud reveal" style="--c:var(--peri-neon)"><span class="f-ico">{{i_building}}</span><h3>Businesses</h3><p>Convert invoices to Excel, watermark proposals, protect contracts and keep sensitive files off third-party servers.</p>
+          <ul><li><a href="pdf-to-excel/">{{i_arrow}} Statements → Excel</a></li><li><a href="protect-pdf/">{{i_arrow}} Password-protect contracts</a></li><li><a href="add-watermark/">{{i_arrow}} Brand with a watermark</a></li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="container">
+      <div class="section-head reveal"><span class="kicker">Three steps</span><h2>From file to finished in seconds</h2></div>
+      <div class="steps-3">
+        <div class="step reveal"><h3>Choose a tool</h3><p>Search or browse {{tool_count}} tools for PDFs and images.</p></div>
+        <div class="step reveal"><h3>Drop your files</h3><p>Drag &amp; drop, browse, or paste. Preview everything before you start.</p></div>
+        <div class="step reveal"><h3>Download</h3><p>Get your result instantly — single files or a ZIP for batches.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="narrow">
+      <div class="section-head reveal"><span class="kicker">FAQ</span><h2>Good questions</h2></div>
+      <div class="faq-list reveal">
+        <details><summary>Is YoPdfs really free?</summary><p>Yes. Every tool is free to use with no watermark and no sign-up. Optional accounts let you keep a history of the tools you use, and future Pro plans will add extras for heavy users — the core tools stay free.</p></details>
+        <details><summary>Are my files uploaded to your servers?</summary><p>No. YoPdfs processes files inside your browser using open-source engines (pdf-lib, PDF.js, qpdf, Tesseract and an on-device AI model). Your files never reach our servers.</p></details>
+        <details><summary>Does it work on my phone?</summary><p>Yes — YoPdfs is fully responsive and works in modern mobile browsers on Android and iPhone. Very large files are faster on a computer.</p></details>
+        <details><summary>Why should I create an account?</summary><p>An account is optional. It saves your tool history and preferences across visits, and it will unlock Pro features when they launch.</p></details>
+        <details><summary>Is there a file size limit?</summary><p>There's no server limit because nothing is uploaded. Practical limits depend on your device's memory — files of a few hundred MB work well on most computers.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Ready to get things done?</h2>
+        <p>Join students, job seekers and teams who handle documents the private way.</p>
+        <div class="row" style="justify-content:center;margin-top:20px">
+          <a class="btn btn-lg" href="#tools">Explore all tools {{i_arrow}}</a>
+          <a class="btn btn-lg" href="account/?mode=signup" style="--b-bg:rgba(255,255,255,.14);--b-fg:#fff;border:1px solid rgba(255,255,255,.35)">Create free account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

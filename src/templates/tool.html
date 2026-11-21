@@ -1,0 +1,63 @@
+{{> head}}
+{{> header}}
+<main id="main" class="cat-{{primary}}">
+  <section class="tool-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="{{home}}">Home</a><span>/</span><a href="{{home}}#tools">{{cat_name}} tools</a><span>/</span><span aria-current="page">{{name}}</span></nav>
+      <div class="tool-hero-head">
+        <span class="tool-icon lg cat-{{primary}}">{{icon_svg}}</span>
+        <div>
+          <h1>{{h1}}</h1>
+          <p class="lead">{{sub}}</p>
+        </div>
+      </div>
+      <ul class="trust-row">
+        <li>{{i_shield}} Processed on your device — no upload</li>
+        <li>{{i_zap}} Fast, no queue</li>
+        <li>{{i_gift}} Free · no watermark · no sign-up</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="workspace" id="workspace" data-tool="{{slug}}" data-accept="{{accept}}" data-multiple="{{multiple}}" data-min="{{min_files}}" data-formats="{{formats}}">
+      <div class="dropzone" tabindex="0" role="button" aria-label="Choose files">
+        <span class="dz-icon">{{i_upload}}</span>
+        <h2>Drop {{drop_word}} here</h2>
+        <p class="dz-or">or <b style="color:var(--violet-neon)">browse your device</b> · paste with Ctrl+V</p>
+        <div class="dz-formats">{{formats_html}}</div>
+        <span class="dz-privacy">{{i_shield}} Stays on your device</span>
+      </div>
+      <noscript><p class="opt-note warn">Please enable JavaScript — {{name}} runs entirely in your browser.</p></noscript>
+    </div>
+    <div class="ad-slot" data-ad="tool-below"></div>
+  </section>
+
+  <section class="container">
+    <div class="seo-grid">
+      <div class="reveal">
+        <span class="kicker">How it works</span>
+        <h2>How to use {{name}}</h2>
+        <ol class="how-steps">{{steps_html}}</ol>
+      </div>
+      <div class="reveal">
+        <span class="kicker">FAQ</span>
+        <h2>Questions, answered</h2>
+        <div class="faq-list">{{faq_html}}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="kicker">Keep going</span><h2>Related tools</h2></div>
+      <div class="tool-grid">{{related_html}}</div>
+    </div>
+  </section>
+</main>
+{{> footer}}
+{{> scripts}}
+<script src="{{root}}assets/js/workspace.js?v={{ver}}" defer></script>
+<script src="{{root}}assets/js/tools/{{group}}.js?v={{ver}}" defer></script>
+</body>
+</html>
